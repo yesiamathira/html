@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<HEAD>
+<style>
+    html,body{height:100%}
+    div:nth-of-type(1){height:10%;}
+    div:nth-of-type(2){height:10%;}
+    div:nth-of-type(3){height:70%;}
+    div:nth-of-type(4){height:10%;}
+    .row{
+border:1px solid gray;
+box-shadow: 4px 4px 4px #888888;
+}
+
+.row .cola{
+float:left;
+width:20%;
+margin-left:30 px;
+
+}
+   
+.mySlides {display:none;}
+.slides{
+    height: 70%;
+}
+   
+   .row .text{
+left:10 px;
+text-align:center;
+width:80%;
+vertical-align:-webkit-baseline-middle;
+   }
+
+.row1{background-color:chocolate;}
+.row1 .text2{
+text-align:center;
+color:white;
+padding: 10px;
+}
+
+ .row3 
+{background-color:brown;
+text-align:center;
+color:skyblue;
+padding-top:40px;
+}
+
+  #one
+  { float:left;
+  width:15%;} 
+
+  #two{
+  width:70%;} 
+
+  #three{
+  width:15%;
+  float:right;
+  } 
+
+   </style>
+
+</HEAD>
+<title>Bhilwara</title>
+<body>
+    <div class ="row">
+        <img class="cola" src="bhilwara.png" alt="Bhilwara Logo" width="100px"  height="100px">
+         <h1 class="text"> BHILWARA INFOTECHNOLOGY </h1>
+         </div>
+         <div class="row1">
+                <h1 class="text2"> Welcome to Bhilwara</h1>  
+         </div>
+         <!-- <div class="slides" style="max-width:500px">
+                <img class="mySlides" src="imgone.jpg">
+                <img class="mySlides" src="imgtwo.jpg">
+                <img class="mySlides" src="imgtwo.jpg.jpg">
+        </div> -->
+        <div class="slides" style="max-width:500px">
+                <img class="mySlides" src="imgone.jpg" style="width:100%">
+                <img class="mySlides" src="imgtwo.jpg" style="width:100%">
+                <img class="mySlides" src="imgtwo.jpg" style="width:100%">
+        </div>
+        <script>
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+                </script>
+                
+
+             <div class="row3">
+<span id="one">Phone no:7890675890 </span>
+   <span id="two">   Locaton: Fortune Summit IT Park,Silk Board,Bangalore</span>
+   <span id="three">Fax: 9087654365</span>
+
+</div>
+</body>
+</HTML>
